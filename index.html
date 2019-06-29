@@ -7,14 +7,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.transitions.css"/>
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/custom-bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/above-the-fold.css"/>
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-
-
-
 </head>
 <body>
 
@@ -22,7 +17,7 @@
 	<header>
 		<div class="container">
 			<div class="logo pull-left animated wow fadeInLeft">
-				<img class="logo-image" src="img/logo.png" alt="" title="">
+				<img class="logo-image" src="img/logo-c.png" alt="" title="">
 			</div>
 
 
@@ -110,7 +105,7 @@
 			<div class="row">
 				<div class="col-md-6 text-center animated wow fadeInLeft">
 					<div class="iphone">
-						<img src="img/iphone.png" alt="" titl="">
+						<img src="img/iphone-c.png" alt="" titl="">
 					</div>
 				</div>
 				<div class="col-md-6 animated wow fadeInRight">
@@ -135,7 +130,7 @@
 							</li>
 						</ul>
 
-						<a href="#" class="app_store_btn text-uppercase" id="play_video" data-video="https://www.youtube.com/watch?v=sCX_YMPuJGA?autoplay=1&showinfo=0">
+						<a href="#" class="app_store_btn text-uppercase" id="play_video" data-video="https://www.youtube-nocookie.com/embed/sCX_YMPuJGA">
 							<i class="play_icon"></i>
 							<span>About Video</span>
 						</a>
@@ -287,15 +282,39 @@
 	</footer>
 	<!--  End Footer Section  -->
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script defer type="text/javascript" src="js/ajaxchimp.js"></script>
 
-	<script defer type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script defer type="text/javascript" src="js/wow.js"></script>
-	<script defer type="text/javascript" src="js/parallax.js"></script>
-	<script defer type="text/javascript" src="js/nicescroll.js"></script>
-	<script defer type="text/javascript" src="js/main.js"></script>
-	<script defer type="text/javascript" src="js/scrollTo.js"></script>
+
+
+
+
+	<!-- Javascript Files -->
+	<script type="text/javascript">
+		const loadStyleSheet = src => {
+			if(document.createStylesheet) {
+				document.createStylesheet(src)
+			}
+			else {
+				const stylesheet = document.createElement('link');
+				stylesheet.rel = 'stylesheet';
+				stylesheet.type = 'text/css';
+				stylesheet.href = src;
+
+				document.getElementsByTagName('head')[0]
+						.appendChild(stylesheet);
+			}
+		}
+
+		window.onload = function() {
+			loadStyleSheet('css/owl.css');
+			loadStyleSheet('css/main.css');
+		}
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>
+	<!-- End of Javascript Files -->
+
+
 
 </body>
 </html>
