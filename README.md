@@ -9,3 +9,9 @@ Steps taken to optimized this website are mentioned below
 * e) minified all scripts
 * f) Eliminated useless libraries
 * g) replaced unnecessary JS/CSS + minified 
+
+## PageSpeed Insights Before 
+<img src="./img/before.png"/>
+
+## PageSpeed Insights After 
+<img src="./img/after.png"/>
