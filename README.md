@@ -10,8 +10,8 @@ Steps taken to optimized this website are mentioned below
 * f) Eliminated useless libraries
 * g) replaced unnecessary JS/CSS + minified 
 
-## PageSpeed Insights Before 
+## PageSpeed Insights Before Optimization
 <img src="./img/before.png"/>
 
-## PageSpeed Insights After 
+## PageSpeed Insights After Optimization
 <img src="./img/after.png"/>
